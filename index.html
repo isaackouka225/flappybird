@@ -1,32 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLAPPYBIRD</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js" charset="UTF-8"></script>
+    <title>Flappy Bird Game</title>
 </head>
-
 <body>
-    <div class="border-left"> </div>
     <div class="game-container">
-        <div class="border-top"> </div>
-        <div class="sky">
-
+        <div class="border-left"></div>
+        <div class="border-right"></div>
+        <div class="border-top"></div>
+        <div class="sky"></div>
+        <div class="game-display">
+            <div class="ground-moving"></div>
+            <!-- Conteneur pour les obstacles générés dynamiquement -->
+            <div class="obstacle"></div>
+            <div class="topObstacle"></div>
             <div class="bird"></div>
         </div>
     </div>
-    
-    <div class="ground-container">
-        <div class="ground-moving"></div>
-        <div class="obstacle"></div>
-            <div class="topObstacle"></div>
-            <div class="bird"></div>
-    </div>
-
-    <div class="border-right"></div>
+    <script src="app.js"></script>
 </body>
-
 </html>
